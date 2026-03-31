@@ -4,13 +4,17 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import ComponenteCrearCita from "./CrearCita";
+import Listado from './Listado'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
       <ComponenteCrearCita />
+      <Listado/>
+
       
     </>
   )
