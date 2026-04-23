@@ -5,17 +5,25 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import ComponenteCrearCita from "./CrearCita";
 import Listado from './Listado'
+import './Listado.css'
+import './cita.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <h1>ADMINISTRADOR DE PACIENTES</h1>
+      <div className="container">
+        <div className="row">
+          <ComponenteCrearCita />
+          <Listado />
+        </div>
+      </div>
 
-      <ComponenteCrearCita />
-      <Listado/>
 
-      
+
+
     </>
   )
 }
